@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: black;
+    color:white;
+}
+/*.............. navbar............. */
+.navbar{
+    width:100%;
+    height:auto;
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+    margin-left: 5vw;
+}
+.navbar{
+    padding:4vh 0 2vh 0;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    margin:2vw 2vw;
+    
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+/* .....................introduction.............. */
+#intro{
+    width:95%;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+  #intro-logo img{
+    width:45vw;
+    height:auto;
+    position: relative;
+    right: 3vw;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+}
+#intro-name{
+    text-align: left;
+    height:1 rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    font-size:3vw;
+    border-radius:10px;
+    margin-bottom: 20vh;
+    margin-left:4vw;
+    word-spacing: 3px;
+}
+.intro-style{
+    font-family: 'Merriweather', serif;
+    font-size: 4vw;
+    background: linear-gradient(to right, #3AC0CF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width:697px){
+   #intro{
+    flex-direction:column;
+   }
+   #intro-name{
+    margin-top:5vh;
+    margin-bottom:0;
+   }
+   .intro-style{
+    font-size: 5vw;
+   }
+}
+@keyframes slide {
+    0%{position:relative;bottom:0px}
+    50%{position:relative;bottom:10px;}
+    100%{position: relative;bottom:0px;}
+}
+#links a img{
+    width:3vw;
+    height:auto;
+    margin-top: 2vh;
+    border-radius: 100px;
+    background-color: white;
+    border: 1px solid white;
+} 
+
+#back-video{
+    z-index: -1;
+    position: absolute;
+    top:0;
+}
